@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("weather").innerHTML = `
       <h3>City: ${data.location}</h3>
       <p>Temperature: ${data.temperature}°C</p>
+      <p>Humidity: ${data.humidity}°C</p>
       <p>Condition: ${data.description}</p>
     `;
   }

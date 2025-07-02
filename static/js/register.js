@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const email = document.getElementById("email").value.trim();
+    const country = document.getElementById("country").value.trim();
     const location = document.getElementById("location").value.trim();
     const password = document.getElementById("password").value.trim();
     const confirm = document.getElementById("confirm").value.trim();

@@ -27,6 +27,8 @@ def register(request):
 def register_user(request):
     email = request.data.get("email")
     password = request.data.get("password")
+    country = request.data.get("country")
+
     location = request.data.get("location", "Hyderabad")  # fallback default
 
     if not email or not password:
@@ -38,7 +40,8 @@ def register_user(request):
     user = CustomUser.objects.create_user(
         email=email,
         password=password,
-        location=location
+        location=location,
+        country=country
     )
     user.is_active = True
     user.save()

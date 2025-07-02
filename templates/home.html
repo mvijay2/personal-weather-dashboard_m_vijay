@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to WeatherVision</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#7ecafc, #ffffff);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .links {
+      margin-top: 30px;
+    }
+    a {
+      text-decoration: none;
+      background-color: #007acc;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      margin: 0 10px;
+      transition: background 0.3s ease;
+    }
+    a:hover {
+      background-color: #005e99;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌤️ WeatherVision Dashboard</h1>
+  <p>
+    Welcome! This dashboard provides real-time weather updates based on your registered location.
+    Secure login, dynamic visuals, and a clean UI — all built with Django + OpenWeatherMap.
+  </p>
+
+  <div class="links">
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'register' %}">Register</a>
+    <a href="{% url 'weather_dashboard' %}">Go to Dashboard</a>
+  </div>
+</body>
+</html>
