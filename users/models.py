@@ -11,7 +11,7 @@ from .managers import CustomUserManager
 from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.models import PermissionsMixin
 #from django.utils.translation import ugettext_lazy as _
-from django_countries.fields import CountryField
+# from django_countries.fields import CountryField
 
 
     
