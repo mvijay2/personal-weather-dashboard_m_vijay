@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h2>Welcome to your Dashboard</h2>
+    <!-- <button onclick="logout()">Logout</button> -->
+    <a href="{% url 'login' %}">Logout</a>
+    <div id="weather">
+        <p>Fetching weather data...</p>
+    </div>
+
+    <script src="{% static 'js/dashboard.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+#weather {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffffaa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2, h3 {
+    color: #0077b6;
+}
+
+img {
+    height: 60px;
+}
